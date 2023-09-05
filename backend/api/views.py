@@ -4,6 +4,12 @@ from rest_framework.response import Response
 from .models import Task
 from .serializers import TaskSerializer
 
+"""
+    Класс для работы с пользователями.
+
+    Args:
+        user_id (int): Идентификатор пользователя.
+    """
 
 class TaskView(viewsets.ModelViewSet):
     serializer_class = TaskSerializer
